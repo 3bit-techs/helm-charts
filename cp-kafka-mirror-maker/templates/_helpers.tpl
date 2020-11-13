@@ -2,7 +2,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "kafka-mirror-maker.name" -}}
+{{- define "cp-kafka-mirror-maker.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
@@ -11,7 +11,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "kafka-mirror-maker.fullname" -}}
+{{- define "cp-kafka-mirror-maker.fullname" -}}
 {{- if .Values.fullnameOverride -}}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" -}}
 {{- else -}}
@@ -27,7 +27,7 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "kafka-mirror-maker.chart" -}}
+{{- define "cp-kafka-mirror-maker.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
@@ -35,7 +35,7 @@ Create chart name and version as used by the chart label.
 Create a default fully qualified kafka headless name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 */}}
-{{- define "kafka-mirror-maker.cp-kafka-headless.fullname" -}}
+{{- define "cp-kafka-mirror-maker.cp-kafka-headless.fullname" -}}
 {{- $name := "cp-kafka-headless" -}}
 {{- printf "%s-%s" .Release.Name $name | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
@@ -43,7 +43,7 @@ We truncate at 63 chars because some Kubernetes name fields are limited to this 
 {{/*
 Default GroupId to Release Name but allow it to be overridden
 */}}
-{{- define "kafka-mirror-maker.groupId" -}}
+{{- define "cp-kafka-mirror-maker.groupId" -}}
 {{- if .Values.kafka.overrideGroupId -}}
 {{- .Values.kafka.overrideGroupId -}}
 {{- else -}}

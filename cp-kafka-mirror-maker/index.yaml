@@ -28,4 +28,21 @@ entries:
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-kafka-mirror-maker-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-13T11:55:42.360703542-03:00"
+  kafka-mirror-maker:
+  - apiVersion: v1
+    appVersion: 5.4.2
+    created: "2020-11-13T11:58:19.491252754-03:00"
+    description: A Helm chart for Kafka MirrorMaker on Kubernetes
+    digest: fe5cbc339a779997ed2dd73ca23363dba68bf59306f10c40ba319d6392d7d68d
+    icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?version=2&modificationDate=1391968911000&api=v2
+    keywords:
+    - kafka
+    - mirror-maker
+    maintainers:
+    - email: dudssource@gmail.com
+      name: dudssource
+    name: kafka-mirror-maker
+    urls:
+    - https://3bit-techs.github.io/helm-charts/kafka-mirror-maker-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-11-13T11:58:19.490703918-03:00"

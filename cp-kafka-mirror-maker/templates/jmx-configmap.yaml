@@ -2,14 +2,14 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ template "kafka-mirror-maker.fullname" . }}-jmx-configmap
+  name: {{ template "cp-kafka-mirror-maker.fullname" . }}-jmx-configmap
   labels:
-    app: {{ template "kafka-mirror-maker.name" . }}
-    chart: {{ template "kafka-mirror-maker.chart" . }}
+    app: {{ template "cp-kafka-mirror-maker.name" . }}
+    chart: {{ template "cp-kafka-mirror-maker.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 data:
-  jmx-kafka-mirror-maker-prometheus.yml: |+
+  jmx-cp-kafka-mirror-maker-prometheus.yml: |+
     jmxUrl: service:jmx:rmi:///jndi/rmi://localhost:{{ .Values.jmx.port }}/jmxrmi
     lowercaseOutputName: true
     lowercaseOutputLabelNames: true

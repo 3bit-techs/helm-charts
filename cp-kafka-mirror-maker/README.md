@@ -1,4 +1,4 @@
-# kafka-mirror-maker
+# cp-kafka-mirror-maker
 
 ![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![AppVersion: 5.4.2](https://img.shields.io/badge/AppVersion-5.4.2-informational?style=flat-square)
 
@@ -12,17 +12,17 @@ helm repo update
 
 ## Install Chart
 ```console
-helm install [RELEASE_NAME] 3bit-techs/kafka-mirror-maker
+helm install [RELEASE_NAME] 3bit-techs/cp-kafka-mirror-maker
 ```
 
 ## Configuration
 ```console
-helm show values 3bit-techs/kafka-mirror-maker
+helm show values 3bit-techs/cp-kafka-mirror-maker
 ```
 
 ## Upgrading Chart
 ```console
-helm upgrade [RELEASE_NAME] 3bit-techs/kafka-mirror-maker
+helm upgrade [RELEASE_NAME] 3bit-techs/cp-kafka-mirror-maker
 ```
 
 ## Uninstall Chart

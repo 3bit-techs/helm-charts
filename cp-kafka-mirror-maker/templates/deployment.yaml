@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ template "kafka-mirror-maker.fullname" . }}
+  name: {{ template "cp-kafka-mirror-maker.fullname" . }}
   labels:
-    app: {{ template "kafka-mirror-maker.name" . }}
-    chart: {{ template "kafka-mirror-maker.chart" . }}
+    app: {{ template "cp-kafka-mirror-maker.name" . }}
+    chart: {{ template "cp-kafka-mirror-maker.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ template "kafka-mirror-maker.name" . }}
+      app: {{ template "cp-kafka-mirror-maker.name" . }}
       release: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app: {{ template "kafka-mirror-maker.name" . }}
+        app: {{ template "cp-kafka-mirror-maker.name" . }}
         release: {{ .Release.Name }}
       {{- if or .Values.podAnnotations .Values.jmx.enabled }}
       annotations:
@@ -38,27 +38,27 @@ spec:
           - -jar
           - jmx_prometheus_httpserver.jar
           - {{ .Values.prometheus.jmx.port | quote }}
-          - /etc/jmx-kafka-mirror-maker/jmx-kafka-mirror-maker-prometheus.yml
+          - /etc/jmx-cp-kafka-mirror-maker/jmx-cp-kafka-mirror-maker-prometheus.yml
           ports:
           - containerPort: {{ .Values.prometheus.jmx.port }}
           resources:
 {{ toYaml .Values.prometheus.jmx.resources | indent 12 }}
           volumeMounts:
           - name: jmx-config
-            mountPath: /etc/jmx-kafka-mirror-maker
+            mountPath: /etc/jmx-cp-kafka-mirror-maker
         {{- end }}
-        - name: {{ template "kafka-mirror-maker.name" . }}-server
+        - name: {{ template "cp-kafka-mirror-maker.name" . }}-server
           image: "{{ .Values.image }}:{{ .Values.imageTag }}"
           imagePullPolicy: "{{ .Values.imagePullPolicy }}"
           ports:
-            - name: kafka-mirror-maker
+            - name: cp-kafka-mirror-maker
               containerPort: {{ .Values.servicePort }}
               protocol: TCP
             {{- if .Values.jmx.enabled }}
             - containerPort: {{ .Values.jmx.port }}
               name: jmx
             {{- end }}
-          command: ["/bin/bash", "-c", "kafka-mirror-maker"]
+          command: ["/bin/bash", "-c", "cp-kafka-mirror-maker"]
           args:
             - --consumer.config=/etc/mirror-maker/consumer.properties
             - --producer.config=/etc/mirror-maker/producer.properties
@@ -84,11 +84,11 @@ spec:
       {{- if .Values.jmx.enabled }}
       - name: jmx-config
         configMap:
-          name: {{ template "kafka-mirror-maker.fullname" . }}-jmx-configmap
+          name: {{ template "cp-kafka-mirror-maker.fullname" . }}-jmx-configmap
       {{- end }}
       - name: mirror-maker-config
         configMap:
-          name: {{ template "kafka-mirror-maker.fullname" . }}-configmap
+          name: {{ template "cp-kafka-mirror-maker.fullname" . }}-configmap
       {{- if .Values.nodeSelector }}
       nodeSelector:
 {{ toYaml .Values.nodeSelector | indent 8 }}

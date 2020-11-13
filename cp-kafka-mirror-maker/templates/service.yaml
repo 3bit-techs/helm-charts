@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "cp-kafka-mirror-maker.fullname" . }}
+  labels:
+    app: {{ template "cp-kafka-mirror-maker.name" . }}
+    chart: {{ template "cp-kafka-mirror-maker.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  ports:
+    - name: cp-kafka-mirror-maker
+      port: {{ .Values.servicePort }}
+  selector:
+    app: {{ template "cp-kafka-mirror-maker.name" . }}
+    release: {{ .Release.Name }}

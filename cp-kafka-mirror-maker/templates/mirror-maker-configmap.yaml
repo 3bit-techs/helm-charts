@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ template "kafka-mirror-maker.fullname" . }}-configmap
+  name: {{ template "cp-kafka-mirror-maker.fullname" . }}-configmap
   labels:
-    app: {{ template "kafka-mirror-maker.name" . }}
-    chart: {{ template "kafka-mirror-maker.chart" . }}
+    app: {{ template "cp-kafka-mirror-maker.name" . }}
+    chart: {{ template "cp-kafka-mirror-maker.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 data:
@@ -12,7 +12,7 @@ data:
     {{- range $key, $value := .Values.kafka.consumerConfig }}
     {{ $key }}={{ $value }}
     {{- end }}
-    group.id={{ include "kafka-mirror-maker.groupId" . }}
+    group.id={{ include "cp-kafka-mirror-maker.groupId" . }}
   producer.properties: |+
     {{- range $key, $value := .Values.kafka.producerConfig }}
     {{ $key }}={{ $value }}
