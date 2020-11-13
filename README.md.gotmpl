@@ -1,0 +1,22 @@
+{{ template "chart.header" . }}
+
+{{ template "chart.versionBadge" . }}{{ template "chart.typeBadge" . }}{{ template "chart.appVersionBadge" . }}
+
+{{ template "chart.description" . }}
+
+## Get Repo Info
+```console
+helm repo add 3bit-techs https://3bit-techs.github.io/helm-charts
+helm repo update
+```
+
+## Install Chart
+```console
+helm install [RELEASE_NAME] 3bit-techs/{{ template "chart.name" . }}
+```
+
+{{ template "chart.maintainersSection" . }}
+
+{{ template "chart.requirementsSection" . }}
+
+{{ template "chart.valuesSection" . }}
