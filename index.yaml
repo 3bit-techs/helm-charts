@@ -3,9 +3,9 @@ entries:
   cp-kafka-connect:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-11-13T12:22:24.586599195-03:00"
+    created: "2020-11-13T12:46:29.59506943-03:00"
     description: A Helm chart for Confluent Kafka Connect on Kubernetes
-    digest: a6257ce59bbea9fe130e093e69a1007d8f5167bb364e5f7576d78e71d531a34b
+    digest: 09ff99809ecb0a95e259ca8ddb171b878e48181b7800f719c5596ac3d20c4708
     name: cp-kafka-connect
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-kafka-connect-0.1.0.tgz
@@ -13,9 +13,26 @@ entries:
   cp-kafka-mirror-maker:
   - apiVersion: v1
     appVersion: 5.4.2
-    created: "2020-11-13T12:22:24.587048676-03:00"
+    created: "2020-11-13T12:46:29.596563417-03:00"
     description: A Helm chart for Confluent Kafka MirrorMaker on Kubernetes
-    digest: b854dda095d72baee8eafd1849c8b30f25f02e6a707a496a88e85854ae48aebc
+    digest: 4b547fbbdac73ce8d10c364c956f98a5722b165cabe32a8df652461d45c19e2e
+    icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?version=2&modificationDate=1391968911000&api=v2
+    keywords:
+    - kafka
+    - mirror-maker
+    maintainers:
+    - email: dudssource@gmail.com
+      name: dudssource
+      url: https://www.3bit.com.br/
+    name: cp-kafka-mirror-maker
+    urls:
+    - https://3bit-techs.github.io/helm-charts/cp-kafka-mirror-maker-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: 5.4.2
+    created: "2020-11-13T12:46:29.595492026-03:00"
+    description: A Helm chart for Confluent Kafka MirrorMaker on Kubernetes
+    digest: ccfaa55d79a1b105eb054a1582ec518c7a7ef55c8cf188b59cbbe2b2fe2f6d54
     icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?version=2&modificationDate=1391968911000&api=v2
     keywords:
     - kafka
@@ -28,4 +45,4 @@ entries:
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-kafka-mirror-maker-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-13T12:22:24.586050066-03:00"
+generated: "2020-11-13T12:46:29.594366768-03:00"

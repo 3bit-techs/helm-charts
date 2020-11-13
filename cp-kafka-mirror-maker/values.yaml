@@ -66,7 +66,8 @@ prometheus:
 ## You can list load balanced service endpoint, or list of all brokers (which is hard in K8s).  e.g.:
 ## bootstrapServers: "PLAINTEXT://prod-kafka-0:9092"
 kafka:
-  topicWhitelist: ".*"
+  topicWhitelist:
+  topicBlacklist:
   numStreams: "1"
   producerConfig:
     bootstrap.servers: "localhost:9094"

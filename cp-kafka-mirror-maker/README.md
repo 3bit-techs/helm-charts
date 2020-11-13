@@ -1,6 +1,6 @@
 # cp-kafka-mirror-maker
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![AppVersion: 5.4.2](https://img.shields.io/badge/AppVersion-5.4.2-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![AppVersion: 5.4.2](https://img.shields.io/badge/AppVersion-5.4.2-informational?style=flat-square)
 
 A Helm chart for Confluent Kafka MirrorMaker on Kubernetes
 
@@ -55,7 +55,8 @@ helm uninstall [RELEASE_NAME]
 | kafka.producerConfig."bootstrap.servers" | string | `"localhost:9094"` |  |
 | kafka.producerConfig."security.protocol" | string | `"SSL"` |  |
 | kafka.producerConfig."ssl.truststore.location" | string | `"/usr/lib/jvm/zulu-8-amd64/jre/lib/security/cacerts"` |  |
-| kafka.topicWhitelist | string | `".*"` |  |
+| kafka.topicBlacklist | string | `nil` |  |
+| kafka.topicWhitelist | string | `nil` |  |
 | nodeSelector | object | `{}` |  |
 | podAnnotations | object | `{}` |  |
 | prometheus.jmx.image | string | `"solsson/kafka-prometheus-jmx-exporter@sha256"` |  |
