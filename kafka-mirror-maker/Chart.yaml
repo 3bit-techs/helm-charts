@@ -7,6 +7,7 @@ icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?ve
 maintainers:
   - name: dudssource
     email: dudssource@gmail.com
+    url: https://www.3bit.com.br/
 keywords:
 - kafka
 - mirror-maker

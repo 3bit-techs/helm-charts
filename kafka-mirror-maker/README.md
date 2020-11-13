@@ -34,7 +34,7 @@ helm uninstall [RELEASE_NAME]
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| dudssource | dudssource@gmail.com |  |
+| dudssource | dudssource@gmail.com | https://www.3bit.com.br/ |
 
 ## Values
 
