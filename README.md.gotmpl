@@ -15,6 +15,21 @@ helm repo update
 helm install [RELEASE_NAME] 3bit-techs/{{ template "chart.name" . }}
 ```
 
+## Configuration
+```console
+helm show values 3bit-techs/{{ template "chart.name" . }}
+```
+
+## Upgrading Chart
+```console
+helm upgrade [RELEASE_NAME] 3bit-techs/{{ template "chart.name" . }}
+```
+
+## Uninstall Chart
+```console
+helm uninstall [RELEASE_NAME]
+```
+
 {{ template "chart.maintainersSection" . }}
 
 {{ template "chart.requirementsSection" . }}

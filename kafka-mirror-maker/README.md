@@ -15,6 +15,21 @@ helm repo update
 helm install [RELEASE_NAME] 3bit-techs/kafka-mirror-maker
 ```
 
+## Configuration
+```console
+helm show values 3bit-techs/kafka-mirror-maker
+```
+
+## Upgrading Chart
+```console
+helm upgrade [RELEASE_NAME] 3bit-techs/kafka-mirror-maker
+```
+
+## Uninstall Chart
+```console
+helm uninstall [RELEASE_NAME]
+```
+
 ## Maintainers
 
 | Name | Email | Url |

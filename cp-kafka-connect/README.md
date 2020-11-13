@@ -15,6 +15,21 @@ helm repo update
 helm install [RELEASE_NAME] 3bit-techs/cp-kafka-connect
 ```
 
+## Configuration
+```console
+helm show values 3bit-techs/cp-kafka-connect
+```
+
+## Upgrading Chart
+```console
+helm upgrade [RELEASE_NAME] 3bit-techs/cp-kafka-connect
+```
+
+## Uninstall Chart
+```console
+helm uninstall [RELEASE_NAME]
+```
+
 ## Values
 
 | Key | Type | Default | Description |
