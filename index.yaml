@@ -3,19 +3,19 @@ entries:
   cp-kafka-connect:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-11-13T11:17:08.744273387-03:00"
+    created: "2020-11-13T11:30:32.845077588-03:00"
     description: A Helm chart for Confluent Kafka Connect on Kubernetes
-    digest: 582f191208322249b8da81c62b221461fe1e278b8103111d1c461a6221b10f51
+    digest: d8b1fdbd905984167bbe0b8c3814512816e24031bd6e580764b05101dbb53782
     name: cp-kafka-connect
     urls:
-    - cp-kafka-connect-0.1.0.tgz
+    - https://3bit-techs.github.io/helm-charts/cp-kafka-connect-0.1.0.tgz
     version: 0.1.0
   kafka-mirror-maker:
   - apiVersion: v1
     appVersion: 5.4.2
-    created: "2020-11-13T11:17:08.744825492-03:00"
+    created: "2020-11-13T11:30:32.845651246-03:00"
     description: A Helm chart for Kafka MirrorMaker on Kubernetes
-    digest: 026496140e2715bc3a229b34f7d0c798374afb15d50506ef3aba49cfb3307b48
+    digest: 936fdfe0830787eb96422c36d0a0ff53d2e0e4a155b5c4a61917b1b34b34e663
     icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?version=2&modificationDate=1391968911000&api=v2
     keywords:
     - kafka
@@ -26,11 +26,11 @@ entries:
       url: https://www.3bit.com.br/
     name: kafka-mirror-maker
     urls:
-    - kafka-mirror-maker-0.1.0.tgz
+    - https://3bit-techs.github.io/helm-charts/kafka-mirror-maker-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v1
     appVersion: 5.4.2
-    created: "2020-11-13T11:17:08.74524036-03:00"
+    created: "2020-11-13T11:30:32.846118517-03:00"
     description: A Helm chart for Kafka MirrorMaker on Kubernetes
     digest: fe5cbc339a779997ed2dd73ca23363dba68bf59306f10c40ba319d6392d7d68d
     icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?version=2&modificationDate=1391968911000&api=v2
@@ -42,6 +42,6 @@ entries:
       name: dudssource
     name: kafka-mirror-maker
     urls:
-    - kafka-mirror-maker/kafka-mirror-maker-0.1.0.tgz
+    - https://3bit-techs.github.io/helm-charts/kafka-mirror-maker/kafka-mirror-maker-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-13T11:17:08.743741787-03:00"
+generated: "2020-11-13T11:30:32.844435527-03:00"
