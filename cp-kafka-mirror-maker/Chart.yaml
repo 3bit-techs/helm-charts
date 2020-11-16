@@ -2,7 +2,7 @@ apiVersion: v1
 appVersion: "5.4.2"
 description: A Helm chart for Confluent Kafka MirrorMaker on Kubernetes
 name: cp-kafka-mirror-maker
-version: 0.2.5
+version: 0.2.6
 icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?version=2&modificationDate=1391968911000&api=v2
 maintainers:
   - name: dudssource

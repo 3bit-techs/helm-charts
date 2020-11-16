@@ -58,19 +58,20 @@ spec:
             - containerPort: {{ .Values.jmx.port }}
               name: jmx
             {{- end }}
+          readinessProbe:
+            tcpSocket:
+              port: {{ .Values.servicePort }}
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            tcpSocket:
+              port: {{ .Values.servicePort }}
+            initialDelaySeconds: 15
+            periodSeconds: 20
           command: 
             - /bin/bash
             - -c
-            - kafka-mirror-maker
-            - --consumer.config /etc/mirror-maker/consumer.properties
-            - --producer.config /etc/mirror-maker/producer.properties
-          {{- if .Values.kafka.topicWhitelist }}
-            - --whitelist {{ .Values.kafka.topicWhitelist | quote }}
-          {{- end }}
-          {{- if .Values.kafka.topicBlacklist }}
-            - --blacklist {{ .Values.kafka.topicBlacklist | quote }}
-          {{- end }}
-            - --num.streams {{ .Values.kafka.numStreams }}
+            - kafka-mirror-maker --consumer.config /etc/mirror-maker/consumer.properties --producer.config /etc/mirror-maker/producer.properties --whitelist {{ .Values.kafka.topicWhitelist | quote }} --num.streams {{ .Values.kafka.numStreams }}
           resources:
 {{ toYaml .Values.resources | indent 12 }}
           volumeMounts:
