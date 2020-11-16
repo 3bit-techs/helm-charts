@@ -1,6 +1,6 @@
 # cp-kafka-mirror-maker
 
-![Version: 0.2.8](https://img.shields.io/badge/Version-0.2.8-informational?style=flat-square) ![AppVersion: 5.4.2](https://img.shields.io/badge/AppVersion-5.4.2-informational?style=flat-square)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![AppVersion: 5.4.2](https://img.shields.io/badge/AppVersion-5.4.2-informational?style=flat-square)
 
 A Helm chart for Confluent Kafka MirrorMaker on Kubernetes
 
@@ -63,5 +63,4 @@ helm uninstall [RELEASE_NAME]
 | resources.limits.memory | string | `"2Gi"` |  |
 | resources.requests.cpu | string | `"500m"` |  |
 | resources.requests.memory | string | `"2Gi"` |  |
-| servicePort | int | `8083` |  |
 | tolerations | object | `{}` |  |

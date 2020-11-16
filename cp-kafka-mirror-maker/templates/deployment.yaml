@@ -41,6 +41,18 @@ spec:
           - /etc/jmx-cp-kafka-mirror-maker/jmx-cp-kafka-mirror-maker-prometheus.yml
           ports:
           - containerPort: {{ .Values.prometheus.jmx.port }}
+            name: metrics
+            protocol: TCP
+          readinessProbe:
+            tcpSocket:
+              port: {{ .Values.prometheus.jmx.port }}
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            tcpSocket:
+              port: {{ .Values.prometheus.jmx.port }}
+            initialDelaySeconds: 15
+            periodSeconds: 20
           resources:
 {{ toYaml .Values.prometheus.jmx.resources | indent 12 }}
           volumeMounts:
@@ -51,12 +63,10 @@ spec:
           image: "{{ .Values.image }}:{{ .Values.imageTag }}"
           imagePullPolicy: "{{ .Values.imagePullPolicy }}"
           ports:
-            - name: mirror-maker
-              containerPort: {{ .Values.servicePort }}
-              protocol: TCP
             {{- if .Values.jmx.enabled }}
             - containerPort: {{ .Values.jmx.port }}
               name: jmx
+              protocol: TCP
             {{- end }}
           readinessProbe:
             tcpSocket:

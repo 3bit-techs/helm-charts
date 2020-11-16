@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ template "cp-kafka-mirror-maker.fullname" . }}
+  name: {{ template "cp-kafka-mirror-maker.fullname" . }}-metrics
   labels:
     app: {{ template "cp-kafka-mirror-maker.name" . }}
     chart: {{ template "cp-kafka-mirror-maker.chart" . }}
@@ -9,8 +9,8 @@ metadata:
     heritage: {{ .Release.Service }}
 spec:
   ports:
-    - name: mirror-maker
-      port: {{ .Values.servicePort }}
+    - name: metrics
+      port: {{ .Values.prometheus.jmx.port }}
   selector:
     app: {{ template "cp-kafka-mirror-maker.name" . }}
     release: {{ .Release.Name }}
