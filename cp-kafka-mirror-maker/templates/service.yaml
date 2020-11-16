@@ -1,7 +1,11 @@
+{{- if .Values.jmx.enabled }}
 apiVersion: v1
 kind: Service
 metadata:
   name: {{ template "cp-kafka-mirror-maker.fullname" . }}-metrics
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: {{ .Values.prometheus.jmx.port | quote }}
   labels:
     app: {{ template "cp-kafka-mirror-maker.name" . }}
     chart: {{ template "cp-kafka-mirror-maker.chart" . }}
@@ -14,3 +18,4 @@ spec:
   selector:
     app: {{ template "cp-kafka-mirror-maker.name" . }}
     release: {{ .Release.Name }}
+{{- end }}
