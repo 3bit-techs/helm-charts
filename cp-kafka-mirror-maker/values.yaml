@@ -70,9 +70,5 @@ kafka:
   numStreams: "1"
   producerConfig:
     bootstrap.servers: "localhost:9094"
-    security.protocol: SSL
-    ssl.truststore.location: /usr/lib/jvm/zulu-8-amd64/jre/lib/security/cacerts
   consumerConfig:
     bootstrap.servers: "localhost:9094"
-    security.protocol: SSL
-    ssl.truststore.location: /usr/lib/jvm/zulu-8-amd64/jre/lib/security/cacerts
