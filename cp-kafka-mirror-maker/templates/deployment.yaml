@@ -62,13 +62,13 @@ spec:
             - /bin/bash
             - -c
             - kafka-mirror-maker
-            - --consumer.config=/etc/mirror-maker/consumer.properties
-            - --producer.config=/etc/mirror-maker/producer.properties
+            - --consumer.config /etc/mirror-maker/consumer.properties
+            - --producer.config /etc/mirror-maker/producer.properties
           {{- if .Values.kafka.topicWhitelist }}
-            - --whitelist {{ .Values.kafka.topicWhitelist }}
+            - --whitelist {{ .Values.kafka.topicWhitelist | quote }}
           {{- end }}
           {{- if .Values.kafka.topicBlacklist }}
-            - --blacklist {{ .Values.kafka.topicBlacklist }}
+            - --blacklist {{ .Values.kafka.topicBlacklist | quote }}
           {{- end }}
             - --num.streams {{ .Values.kafka.numStreams }}
           resources:
