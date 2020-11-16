@@ -9,7 +9,7 @@ metadata:
     heritage: {{ .Release.Service }}
 spec:
   ports:
-    - name: cp-kafka-mirror-maker
+    - name: mirror-maker
       port: {{ .Values.servicePort }}
   selector:
     app: {{ template "cp-kafka-mirror-maker.name" . }}

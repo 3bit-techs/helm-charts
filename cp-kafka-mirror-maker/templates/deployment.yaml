@@ -51,7 +51,7 @@ spec:
           image: "{{ .Values.image }}:{{ .Values.imageTag }}"
           imagePullPolicy: "{{ .Values.imagePullPolicy }}"
           ports:
-            - name: cp-kafka-mirror-maker
+            - name: mirror-maker
               containerPort: {{ .Values.servicePort }}
               protocol: TCP
             {{- if .Values.jmx.enabled }}
