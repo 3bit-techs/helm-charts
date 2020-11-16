@@ -3,9 +3,9 @@ entries:
   cp-kafka-connect:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-11-13T12:46:29.59506943-03:00"
+    created: "2020-11-16T14:36:25.686054361-03:00"
     description: A Helm chart for Confluent Kafka Connect on Kubernetes
-    digest: 09ff99809ecb0a95e259ca8ddb171b878e48181b7800f719c5596ac3d20c4708
+    digest: 6076551b04e3226c69118a5e6ce6dbafe22c489ace33cd582b593ad1923c7700
     name: cp-kafka-connect
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-kafka-connect-0.1.0.tgz
@@ -13,9 +13,9 @@ entries:
   cp-kafka-mirror-maker:
   - apiVersion: v1
     appVersion: 5.4.2
-    created: "2020-11-13T12:46:29.596563417-03:00"
+    created: "2020-11-16T14:36:25.689324193-03:00"
     description: A Helm chart for Confluent Kafka MirrorMaker on Kubernetes
-    digest: 4b547fbbdac73ce8d10c364c956f98a5722b165cabe32a8df652461d45c19e2e
+    digest: 88c235e03d5a9f74828a011b96d9a1bfe171b78db256b4cabef8f2299e5c487d
     icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?version=2&modificationDate=1391968911000&api=v2
     keywords:
     - kafka
@@ -30,7 +30,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: 5.4.2
-    created: "2020-11-13T12:46:29.595492026-03:00"
+    created: "2020-11-16T14:36:25.687951142-03:00"
     description: A Helm chart for Confluent Kafka MirrorMaker on Kubernetes
     digest: ccfaa55d79a1b105eb054a1582ec518c7a7ef55c8cf188b59cbbe2b2fe2f6d54
     icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?version=2&modificationDate=1391968911000&api=v2
@@ -45,4 +45,4 @@ entries:
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-kafka-mirror-maker-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-13T12:46:29.594366768-03:00"
+generated: "2020-11-16T14:36:25.680116234-03:00"
