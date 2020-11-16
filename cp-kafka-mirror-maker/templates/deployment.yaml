@@ -61,6 +61,7 @@ spec:
           command: 
             - /bin/bash
             - -c
+            - kafka-mirror-maker
             - --consumer.config=/etc/mirror-maker/consumer.properties
             - --producer.config=/etc/mirror-maker/producer.properties
           {{- if .Values.kafka.topicWhitelist }}
