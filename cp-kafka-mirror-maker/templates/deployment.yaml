@@ -58,8 +58,9 @@ spec:
             - containerPort: {{ .Values.jmx.port }}
               name: jmx
             {{- end }}
-          command: ["/bin/bash", "-c", "kafka-mirror-maker"]
-          args:
+          command: 
+            - /bin/bash
+            - -c
             - --consumer.config=/etc/mirror-maker/consumer.properties
             - --producer.config=/etc/mirror-maker/producer.properties
           {{- if .Values.kafka.topicWhitelist }}
