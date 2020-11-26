@@ -3,9 +3,9 @@ entries:
   cp-kafka-connect:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-11-16T20:09:13.551029815-03:00"
+    created: "2020-11-26T18:56:46.89575786-03:00"
     description: A Helm chart for Confluent Kafka Connect on Kubernetes
-    digest: 6f004a31e84c4833e71bad9df8b47c0e57ab2cb412b55ee56e89929d863ea311
+    digest: 66ac8af8bfd7e2538f00a06549a276591c91cade0c81ca6980f41f9877c5ee87
     name: cp-kafka-connect
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-kafka-connect-0.1.0.tgz
@@ -13,9 +13,9 @@ entries:
   cp-kafka-mirror-maker:
   - apiVersion: v1
     appVersion: 5.4.2
-    created: "2020-11-16T20:09:13.5515036-03:00"
+    created: "2020-11-26T18:56:46.896179005-03:00"
     description: A Helm chart for Confluent Kafka MirrorMaker on Kubernetes
-    digest: 641dcc1de8a7d69ea5a8c7f132012e6d4c31188834a0a6c4c109acde0a1b0909
+    digest: 4caa013a97b1b10f90abd64bcadef0d9dcb290384bbe19f4790e57a755b1b71e
     icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?version=2&modificationDate=1391968911000&api=v2
     keywords:
     - kafka
@@ -28,4 +28,33 @@ entries:
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-kafka-mirror-maker-0.3.1.tgz
     version: 0.3.1
-generated: "2020-11-16T20:09:13.550367772-03:00"
+  nexus-repository-manager:
+  - apiVersion: v2
+    appVersion: 3.28.1
+    created: "2020-11-26T18:56:46.896892618-03:00"
+    description: Sonatype Nexus Repository Manager - Universal Binary repository
+    digest: f2c399715f84f25c81371b7547b079a3c1b61d8fb75cd0701cfd70cbd1d33033
+    home: https://www.sonatype.com/nexus-repository-oss
+    icon: https://sonatype.github.io/helm3-charts/NexusRepo_Vertical.svg
+    keywords:
+    - artifacts
+    - dependency
+    - management
+    - sonatype
+    - nexus
+    - repository
+    - quickstart
+    - ci
+    - repository-manager
+    - nexus3
+    maintainers:
+    - email: support@sonatype.com
+      name: Sonatype
+    name: nexus-repository-manager
+    sources:
+    - https://github.com/sonatype/nexus-public
+    type: application
+    urls:
+    - https://3bit-techs.github.io/helm-charts/nexus-repository-manager-28.1.3.tgz
+    version: 28.1.3
+generated: "2020-11-26T18:56:46.895179559-03:00"
