@@ -28,6 +28,16 @@ entries:
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-kafka-mirror-maker-0.3.1.tgz
     version: 0.3.1
+  cp-schema-registry:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-11-28T12:16:04.013146339-03:00"
+    description: A Helm chart for Confluent Schema Registry on Kubernetes
+    digest: b779450020b27accee624e97c135b427568a4fd08a33c738cce54fa7af248fd1
+    name: cp-schema-registry
+    urls:
+    - https://3bit-techs.github.io/helm-charts/cp-schema-registry-0.1.0.tgz
+    version: 0.1.0
   nexus-repository-manager:
   - apiVersion: v2
     appVersion: 3.28.1
@@ -57,4 +67,4 @@ entries:
     urls:
     - https://3bit-techs.github.io/helm-charts/nexus-repository-manager-28.1.3.tgz
     version: 28.1.3
-generated: "2020-11-26T18:56:46.895179559-03:00"
+generated: "2020-11-28T12:16:04.01038622-03:00"
