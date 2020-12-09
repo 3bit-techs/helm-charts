@@ -16,29 +16,12 @@ imagePullPolicy: Always
 imagePullSecrets:
 
 vvpflow:
-  env:
-    VVP_HOST: http://ververica-platform-ververica-platform.vvp.svc.cluster.local:80
-    APP_ROOT: /usr/src/repos/m7-ds-eks/vvpflow
+  env: {}
 
 git:
-  env:
-    GIT_SYNC_REPO: ssh://APKAXLQWECJ3RTT2ZXGK@git-codecommit.us-east-1.amazonaws.com/v1/repos/m7-ds-eks
-    GIT_SYNC_BRANCH: homolog
-    GIT_SYNC_WAIT: "60"
-    GIT_SYNC_SSH: "true"
-    GIT_KNOWN_HOSTS: "false"
-    GIT_SYNC_ROOT: /usr/src/repos
-    GIT_SYNC_DEST: m7-ds-eks
-  additionalVolumeMounts:
-    - name: git-secret
-      mountPath: /etc/git-secret/
-  additionalVolumes:
-    - name: git-secret
-      secret:
-        secretName: vvpflow-secret
-        items:
-        - key: identity
-          path: ssh
+  env: {}
+  additionalVolumeMounts: []
+  additionalVolumes: []
 resources:
   limits:
    cpu: 500m
