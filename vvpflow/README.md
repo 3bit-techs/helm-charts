@@ -40,19 +40,9 @@ helm uninstall [RELEASE_NAME]
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| git.additionalVolumeMounts[0].mountPath | string | `"/etc/git-secret/"` |  |
-| git.additionalVolumeMounts[0].name | string | `"git-secret"` |  |
-| git.additionalVolumes[0].name | string | `"git-secret"` |  |
-| git.additionalVolumes[0].secret.items[0].key | string | `"identity"` |  |
-| git.additionalVolumes[0].secret.items[0].path | string | `"ssh"` |  |
-| git.additionalVolumes[0].secret.secretName | string | `"vvpflow-secret"` |  |
-| git.env.GIT_KNOWN_HOSTS | string | `"false"` |  |
-| git.env.GIT_SYNC_BRANCH | string | `"homolog"` |  |
-| git.env.GIT_SYNC_DEST | string | `"m7-ds-eks"` |  |
-| git.env.GIT_SYNC_REPO | string | `"ssh://APKAXLQWECJ3RTT2ZXGK@git-codecommit.us-east-1.amazonaws.com/v1/repos/m7-ds-eks"` |  |
-| git.env.GIT_SYNC_ROOT | string | `"/usr/src/repos"` |  |
-| git.env.GIT_SYNC_SSH | string | `"true"` |  |
-| git.env.GIT_SYNC_WAIT | string | `"60"` |  |
+| git.additionalVolumeMounts | list | `[]` |  |
+| git.additionalVolumes | list | `[]` |  |
+| git.env | object | `{}` |  |
 | image | string | `"3bittechs/vvpflow"` |  |
 | imagePullPolicy | string | `"Always"` |  |
 | imagePullSecrets | string | `nil` |  |
@@ -65,5 +55,4 @@ helm uninstall [RELEASE_NAME]
 | resources.requests.cpu | string | `"500m"` |  |
 | resources.requests.memory | string | `"2Gi"` |  |
 | tolerations | object | `{}` |  |
-| vvpflow.env.APP_ROOT | string | `"/usr/src/repos/m7-ds-eks/vvpflow"` |  |
-| vvpflow.env.VVP_HOST | string | `"http://ververica-platform-ververica-platform.vvp.svc.cluster.local:80"` |  |
+| vvpflow.env | object | `{}` |  |

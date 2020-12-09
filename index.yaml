@@ -3,9 +3,9 @@ entries:
   cp-kafka-connect:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-09T13:03:44.144437355-03:00"
+    created: "2020-12-09T13:09:18.315269731-03:00"
     description: A Helm chart for Confluent Kafka Connect on Kubernetes
-    digest: c88f860e02af379489a5c09d0b62e98c3cb90023aac75fc096f705693818b57e
+    digest: b77a737a5afb7a0894bfb27340319963a87a44a02c7fe953161a14f4334dda5d
     name: cp-kafka-connect
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-kafka-connect-0.1.0.tgz
@@ -13,9 +13,9 @@ entries:
   cp-kafka-mirror-maker:
   - apiVersion: v1
     appVersion: 5.4.2
-    created: "2020-12-09T13:03:44.14523901-03:00"
+    created: "2020-12-09T13:09:18.315720455-03:00"
     description: A Helm chart for Confluent Kafka MirrorMaker on Kubernetes
-    digest: a37a2c836c08e060e3cb44e990d6cb9fbff313d17592e2ffaf4a7296f36fccc5
+    digest: 62a82132494946b61664b0c88b61c040ff683e71cfdf512d71796d66c8cdf162
     icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?version=2&modificationDate=1391968911000&api=v2
     keywords:
     - kafka
@@ -31,9 +31,9 @@ entries:
   cp-schema-registry:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-09T13:03:44.145913643-03:00"
+    created: "2020-12-09T13:09:18.316079419-03:00"
     description: A Helm chart for Confluent Schema Registry on Kubernetes
-    digest: ffd1e65cbdcf43e23f1fa259c88e8e105ce9f4753bb811ad80fdd9f800986b29
+    digest: f3e75037a7ede81146ea02dd72a40c9911a56e4a5e9b5108c4ed8e44bdbfb004
     name: cp-schema-registry
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-schema-registry-0.1.0.tgz
@@ -41,9 +41,9 @@ entries:
   nexus-repository-manager:
   - apiVersion: v2
     appVersion: 3.28.1
-    created: "2020-12-09T13:03:44.147406539-03:00"
+    created: "2020-12-09T13:09:18.316788464-03:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
-    digest: 4ce3f4ade26c5b89eb43514fd096ffcc64377bafa36e2b3d7a5875fff8e90387
+    digest: 5155f99fe80619311d0cbca72ba1e3c23f4e78549ae47419b7d226e115d9b6b7
     home: https://www.sonatype.com/nexus-repository-oss
     icon: https://sonatype.github.io/helm3-charts/NexusRepo_Vertical.svg
     keywords:
@@ -70,9 +70,9 @@ entries:
   vvpflow:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2020-12-09T13:03:44.148047811-03:00"
+    created: "2020-12-09T13:09:18.317087358-03:00"
     description: A Helm chart for Ververica Platform Flow (GitOps Orchestrator)
-    digest: 8b9010c98ad2fdea1a088b66535b3a8da396e17b5428ef04472c83418c38ad4e
+    digest: efddd08af4285e969aff05717077da1a9c50e26f82ac41800be8e62671d7b2b4
     icon: https://3bit-techs.github.io/helm-charts/vvp-logo.png
     keywords:
     - flink
@@ -87,4 +87,4 @@ entries:
     urls:
     - https://3bit-techs.github.io/helm-charts/vvpflow-1.0.0.tgz
     version: 1.0.0
-generated: "2020-12-09T13:03:44.143372431-03:00"
+generated: "2020-12-09T13:09:18.314658902-03:00"
