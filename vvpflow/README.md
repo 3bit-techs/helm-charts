@@ -1,6 +1,6 @@
 # vvpflow
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![AppVersion: 1.0.1](https://img.shields.io/badge/AppVersion-1.0.1-informational?style=flat-square)
 
 A Helm chart for Ververica Platform Flow (GitOps Orchestrator)
 
@@ -43,6 +43,10 @@ helm uninstall [RELEASE_NAME]
 | git.additionalVolumeMounts | list | `[]` |  |
 | git.additionalVolumes | list | `[]` |  |
 | git.env | object | `{}` |  |
+| git.resources.limits.cpu | string | `"25m"` |  |
+| git.resources.limits.memory | string | `"50Mi"` |  |
+| git.resources.requests.cpu | string | `"25m"` |  |
+| git.resources.requests.memory | string | `"50Mi"` |  |
 | image | string | `"3bittechs/vvpflow"` |  |
 | imagePullPolicy | string | `"Always"` |  |
 | imagePullSecrets | string | `nil` |  |
@@ -50,9 +54,9 @@ helm uninstall [RELEASE_NAME]
 | nodeSelector | object | `{}` |  |
 | podAnnotations | object | `{}` |  |
 | replicaCount | int | `1` |  |
-| resources.limits.cpu | string | `"500m"` |  |
-| resources.limits.memory | string | `"2Gi"` |  |
-| resources.requests.cpu | string | `"500m"` |  |
-| resources.requests.memory | string | `"2Gi"` |  |
 | tolerations | object | `{}` |  |
 | vvpflow.env | object | `{}` |  |
+| vvpflow.resources.limits.cpu | string | `"25m"` |  |
+| vvpflow.resources.limits.memory | string | `"50Mi"` |  |
+| vvpflow.resources.requests.cpu | string | `"25m"` |  |
+| vvpflow.resources.requests.memory | string | `"50Mi"` |  |

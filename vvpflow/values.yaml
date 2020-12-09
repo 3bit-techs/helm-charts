@@ -17,18 +17,25 @@ imagePullSecrets:
 
 vvpflow:
   env: {}
+  resources:
+    limits:
+      cpu: 25m
+      memory: 50Mi
+    requests:
+      cpu: 25m
+      memory: 50Mi
 
 git:
   env: {}
   additionalVolumeMounts: []
   additionalVolumes: []
-resources:
-  limits:
-   cpu: 500m
-   memory: 2Gi
-  requests:
-   cpu: 500m
-   memory: 2Gi
+  resources:
+    limits:
+      cpu: 25m
+      memory: 50Mi
+    requests:
+      cpu: 25m
+      memory: 50Mi
 
 ## Custom pod annotations
 podAnnotations: {}

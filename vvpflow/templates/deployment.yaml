@@ -34,6 +34,10 @@ spec:
         {{- if .Values.git.additionalVolumeMounts }}
 {{ toYaml .Values.git.additionalVolumeMounts | indent 10 }}
         {{- end}}
+        {{- if .Values.git.resources }}
+          resources:
+{{ toYaml .Values.git.resources | indent 12 }}
+        {{- end }}
           {{- if .Values.git.env }}
           env:
           {{- range $key, $value := .Values.git.env }}
@@ -47,8 +51,10 @@ spec:
           - name: deployments
             mountPath: /usr/src/repos
           imagePullPolicy: "{{ .Values.imagePullPolicy }}"
+        {{- if .Values.vvpflow.resources }}
           resources:
-{{ toYaml .Values.resources | indent 12 }}
+{{ toYaml .Values.vvpflow.resources | indent 12 }}
+        {{- end }}
       {{- if .Values.vvpflow.env }}
           env:
           {{- range $key, $value := .Values.vvpflow.env }}
