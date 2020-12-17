@@ -3,9 +3,9 @@ entries:
   cp-kafka-connect:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-09T15:47:15.565841855-03:00"
+    created: "2020-12-17T11:38:18.246701954-03:00"
     description: A Helm chart for Confluent Kafka Connect on Kubernetes
-    digest: 773e9d5aef8385dc6b944c7e12a529116ee9460e2fbeb1740785ed3322a02582
+    digest: 0687532d9a333c650a587b93d0ab0632e521e5bcbd7c7ca15ca4c961fd480573
     name: cp-kafka-connect
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-kafka-connect-0.1.0.tgz
@@ -13,9 +13,9 @@ entries:
   cp-kafka-mirror-maker:
   - apiVersion: v1
     appVersion: 5.4.2
-    created: "2020-12-09T15:47:15.56689345-03:00"
+    created: "2020-12-17T11:38:18.247133755-03:00"
     description: A Helm chart for Confluent Kafka MirrorMaker on Kubernetes
-    digest: 3feefa15c9e78a1cf4250c92d96a99d28bcb2fe173287a549ada69ccec48c54b
+    digest: 2e59c7456af64ed6ec484fc62dec05ac8bdc0025e773756bac4661b62e497c94
     icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?version=2&modificationDate=1391968911000&api=v2
     keywords:
     - kafka
@@ -31,19 +31,36 @@ entries:
   cp-schema-registry:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-09T15:47:15.567282474-03:00"
+    created: "2020-12-17T11:38:18.247846196-03:00"
     description: A Helm chart for Confluent Schema Registry on Kubernetes
-    digest: e00132ed153a6027776ec1dc80ac90f24e64bb24d4ae23d02a9076398caa7a62
+    digest: 908280e15a8253ac37ba6e817af54d1bf7df5b7d44d4235ff2be65df17728ad7
     name: cp-schema-registry
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-schema-registry-0.1.0.tgz
     version: 0.1.0
+  metrics-server:
+  - apiVersion: v1
+    appVersion: 0.3.6
+    created: "2020-12-17T11:38:18.248621825-03:00"
+    deprecated: true
+    description: DEPRECATED - Metrics Server is a cluster-wide aggregator of resource
+      usage data.
+    digest: 225ffca441c929112b593ec87debbb0ec7b916b4e33815873b8943367ba106e9
+    home: https://github.com/kubernetes-incubator/metrics-server
+    keywords:
+    - metrics-server
+    name: metrics-server
+    sources:
+    - https://github.com/kubernetes-incubator/metrics-server
+    urls:
+    - https://3bit-techs.github.io/helm-charts/metrics-server-2.11.4.tgz
+    version: 2.11.4
   nexus-repository-manager:
   - apiVersion: v2
     appVersion: 3.28.1
-    created: "2020-12-09T15:47:15.568077981-03:00"
+    created: "2020-12-17T11:38:18.249398657-03:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
-    digest: 571ab75494f468653541e57ea1b36b3e5ab4a79c4d5194a98c7fe70920576fa5
+    digest: 6c9fdaa9125ea993eae5b3e367d85cb31d19bc3dc08810bcc406050361ccd4e8
     home: https://www.sonatype.com/nexus-repository-oss
     icon: https://sonatype.github.io/helm3-charts/NexusRepo_Vertical.svg
     keywords:
@@ -70,9 +87,9 @@ entries:
   vvpflow:
   - apiVersion: v1
     appVersion: 1.0.1
-    created: "2020-12-09T15:47:15.568761383-03:00"
+    created: "2020-12-17T11:38:18.268755212-03:00"
     description: A Helm chart for Ververica Platform Flow (GitOps Orchestrator)
-    digest: 1da61bd26dfdde9a5e6eff1e498b9518a9961e90801e4f604dcc1f75013285e4
+    digest: a4b304332dbd8efc77e1a373fc6b0f6b98173d98040c8656b46921a67e207b5b
     icon: https://3bit-techs.github.io/helm-charts/vvp-logo.png
     keywords:
     - flink
@@ -89,7 +106,7 @@ entries:
     version: 1.0.1
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2020-12-09T15:47:15.568420213-03:00"
+    created: "2020-12-17T11:38:18.267073703-03:00"
     description: A Helm chart for Ververica Platform Flow (GitOps Orchestrator)
     digest: 1d688f45794709a7139d74e255e7f017a1cd94f12a291d897dc1418c8c701bf8
     icon: https://3bit-techs.github.io/helm-charts/vvp-logo.png
@@ -106,4 +123,4 @@ entries:
     urls:
     - https://3bit-techs.github.io/helm-charts/vvpflow-1.0.0.tgz
     version: 1.0.0
-generated: "2020-12-09T15:47:15.565159202-03:00"
+generated: "2020-12-17T11:38:18.24605679-03:00"
