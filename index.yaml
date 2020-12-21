@@ -38,6 +38,38 @@ entries:
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-schema-registry-0.1.0.tgz
     version: 0.1.0
+  jenkins:
+  - apiVersion: v1
+    appVersion: lts
+    created: "2020-12-21T11:26:57.179596539-03:00"
+    description: Open source continuous integration server. It supports multiple SCM
+      tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
+      Maven-based projects as well as arbitrary scripts.
+    digest: 60339dc0977a3584079cadfac42d725060eed7e908c0800949a7acd97228f9f2
+    home: https://jenkins.io/
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    maintainers:
+    - email: lachlan.evenson@microsoft.com
+      name: lachie83
+    - email: viglesias@google.com
+      name: viglesiasce
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    - email: garridomota@gmail.com
+      name: mogaal
+    - email: wmcdona89@gmail.com
+      name: wmcdona89
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-jnlp-slave
+    - https://github.com/maorfr/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    urls:
+    - https://3bit-techs.github.io/helm-charts/jenkins-1.27.0.tgz
+    version: 1.27.0
   metrics-server:
   - apiVersion: v1
     appVersion: 0.3.6
