@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  alertmanager-cloudwatch:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-01-07T17:40:31.007175955-03:00"
+    description: Alert Manager Cloudwatch integration with Helm chart for Kubernetes
+    digest: c9b2fb502028664fbc573bcafb6b89db9cfda235f4d4777f80da8996306862b5
+    name: alertmanager-cloudwatch
+    type: application
+    urls:
+    - https://3bit-techs.github.io/helm-charts/alertmanager-cloudwatch-1.0.0.tgz
+    version: 1.0.0
   cp-kafka-connect:
   - apiVersion: v1
     appVersion: "1.0"
@@ -155,4 +166,4 @@ entries:
     urls:
     - https://3bit-techs.github.io/helm-charts/vvpflow-1.0.0.tgz
     version: 1.0.0
-generated: "2020-12-17T11:38:18.24605679-03:00"
+generated: "2021-01-07T17:40:31.006402003-03:00"

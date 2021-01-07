@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    {{- include "application.labels" . | nindent 4 }}
+  namespace: {{ .Values.namespace }}
+  name: {{ include "application.fullname" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      deployment: {{ .Chart.Name }}
+      app: {{ .Chart.Name }}
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        prometheus.io/scrape: 'false'
+        timestamp: "{{ .Values.timestamp }}"
+      labels:
+        deployment: {{ .Chart.Name }}
+        app: {{ .Chart.Name }}
+    spec:
+      serviceAccountName: {{ include "application.fullname" . }}
+      containers:
+      - name: {{ .Chart.Name }}
+        image: "{{ .Values.image.repository }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        ports:
+        - name: http
+          containerPort: {{ .Values.container.port }}
+        livenessProbe:
+          failureThreshold: 3
+          initialDelaySeconds: 30
+          periodSeconds: 15
+          successThreshold: 1
+          timeoutSeconds: 5
+          httpGet:
+            path: /healthz
+            port: {{ .Values.container.port }}
+        readinessProbe:
+          failureThreshold: 3
+          initialDelaySeconds: 5
+          periodSeconds: 15
+          successThreshold: 1
+          timeoutSeconds: 5
+          httpGet:
+            path: /healthz
+            port: {{ .Values.container.port }}          
+        resources:
+          limits:
+            memory: {{ .Values.resources.limits.memory }}
+            cpu: {{ .Values.resources.limits.cpu }}
