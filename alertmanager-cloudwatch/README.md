@@ -43,3 +43,4 @@ helm uninstall [RELEASE_NAME]
 | resources.limits.memory | string | `"50Mi"` |  |
 | service.port | int | `80` |  |
 | service.type | string | `"ClusterIP"` |  |
+| serviceAccount.annotations."eks.amazonaws.com/role-arn" | string | `"arn:aws:iam::123456789123:role/xyz"` |  |
