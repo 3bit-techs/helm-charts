@@ -15,3 +15,7 @@ namespace: "monitoring"
 serviceAccount:
   annotations:
     eks.amazonaws.com/role-arn: arn:aws:iam::123456789123:role/xyz
+securityContext:
+  fsGroup: 472
+  runAsGroup: 472
+  runAsUser: 472

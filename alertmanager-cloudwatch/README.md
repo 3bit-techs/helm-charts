@@ -41,6 +41,9 @@ helm uninstall [RELEASE_NAME]
 | replicaCount | int | `1` |  |
 | resources.limits.cpu | float | `0.1` |  |
 | resources.limits.memory | string | `"50Mi"` |  |
+| securityContext.fsGroup | int | `472` |  |
+| securityContext.runAsGroup | int | `472` |  |
+| securityContext.runAsUser | int | `472` |  |
 | service.port | int | `80` |  |
 | service.type | string | `"ClusterIP"` |  |
 | serviceAccount.annotations."eks.amazonaws.com/role-arn" | string | `"arn:aws:iam::123456789123:role/xyz"` |  |

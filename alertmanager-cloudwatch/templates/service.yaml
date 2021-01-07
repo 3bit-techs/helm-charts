@@ -8,5 +8,7 @@ spec:
   ports:
     - port: {{ .Values.service.port }}
       name: web
+      protocol: TCP
+      targetPort: {{ .Values.container.port }}
   selector:
     app: {{ .Chart.Name }}

@@ -23,6 +23,8 @@ spec:
         app: {{ .Chart.Name }}
     spec:
       serviceAccountName: {{ include "application.fullname" . }}
+      securityContext:
+        {{- toYaml .Values.securityContext | trim | nindent 8 }}
       containers:
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}"
