@@ -36,7 +36,7 @@ helm uninstall [RELEASE_NAME]
 |-----|------|---------|-------------|
 | container.port | int | `8077` |  |
 | image.pullPolicy | string | `"Always"` |  |
-| image.repository | string | `"3bittechs/alertmanager-cloudwatch/alertmanager-cloudwatch:latest"` |  |
+| image.repository | string | `"3bittechs/alertmanager-cloudwatch:latest"` |  |
 | namespace | string | `"monitoring"` |  |
 | replicaCount | int | `1` |  |
 | resources.limits.cpu | float | `0.1` |  |

@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: 3bittechs/alertmanager-cloudwatch/alertmanager-cloudwatch:latest
+  repository: 3bittechs/alertmanager-cloudwatch:latest
   pullPolicy: Always
 service:
   type: ClusterIP
