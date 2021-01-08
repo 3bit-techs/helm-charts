@@ -21,4 +21,5 @@ securityContext:
   runAsUser: 472
 awsRegion: "us-east-1"
 ginMode: "release"
-cloudwatchNamespace: "k8s-monitoring"
+cloudwatchNamespace: "Prometheus"
+snsArn: "arn:aws:sns:us-east-1:123123:sns_test"

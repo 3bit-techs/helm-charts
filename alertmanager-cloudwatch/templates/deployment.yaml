@@ -35,7 +35,9 @@ spec:
         - name: NAMESPACE
           value: "{{ .Values.cloudwatchNamespace }}"
         - name: GIN_MODE
-          value: "{{ .Values.ginMode }}"          
+          value: "{{ .Values.ginMode }}"
+        - name: SNS_ARN
+          value: "{{ .Values.snsArn }}"          
         image: "{{ .Values.image.repository }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
