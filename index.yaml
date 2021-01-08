@@ -3,9 +3,9 @@ entries:
   alertmanager-cloudwatch:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-01-07T19:14:45.434376131-03:00"
+    created: "2021-01-08T10:10:47.59375594-03:00"
     description: Alert Manager Cloudwatch integration with Helm chart for Kubernetes
-    digest: 7bcce6a78d4fb3669fc1d8d8e28cdd7502cc620da5ba2865bad7e1c6ef92985e
+    digest: a61f77e0c90486f4e91c47f048eb839a792d3e072077007d9e38ce93589d9381
     name: alertmanager-cloudwatch
     type: application
     urls:

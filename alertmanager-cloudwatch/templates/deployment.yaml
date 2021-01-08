@@ -27,6 +27,15 @@ spec:
         {{- toYaml .Values.securityContext | trim | nindent 8 }}
       containers:
       - name: {{ .Chart.Name }}
+        env:
+        - name: HTTP_PORT
+          value: "{{ .Values.container.port }}"
+        - name: REGION
+          value: "{{ .Values.awsRegion }}"
+        - name: NAMESPACE
+          value: "{{ .Values.namespace }}"
+        - name: GIN_MODE
+          value: "{{ .Values.ginMode }}"          
         image: "{{ .Values.image.repository }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:

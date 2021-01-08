@@ -19,3 +19,5 @@ securityContext:
   fsGroup: 472
   runAsGroup: 472
   runAsUser: 472
+awsRegion: "us-east-1"
+ginMode: "release"

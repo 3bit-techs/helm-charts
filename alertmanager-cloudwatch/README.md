@@ -34,7 +34,9 @@ helm uninstall [RELEASE_NAME]
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| awsRegion | string | `"us-east-1"` |  |
 | container.port | int | `8077` |  |
+| ginMode | string | `"release"` |  |
 | image.pullPolicy | string | `"Always"` |  |
 | image.repository | string | `"3bittechs/alertmanager-cloudwatch:latest"` |  |
 | namespace | string | `"monitoring"` |  |
