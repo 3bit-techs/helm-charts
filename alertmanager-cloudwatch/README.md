@@ -35,6 +35,7 @@ helm uninstall [RELEASE_NAME]
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | awsRegion | string | `"us-east-1"` |  |
+| cloudwatchNamespace | string | `"k8s-monitoring"` |  |
 | container.port | int | `8077` |  |
 | ginMode | string | `"release"` |  |
 | image.pullPolicy | string | `"Always"` |  |

@@ -21,3 +21,4 @@ securityContext:
   runAsUser: 472
 awsRegion: "us-east-1"
 ginMode: "release"
+cloudwatchNamespace: "k8s-monitoring"
