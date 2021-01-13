@@ -13,6 +13,7 @@ resources:
      memory: 50Mi
 namespace: "monitoring"
 serviceAccount:
+  create: true
   annotations:
     eks.amazonaws.com/role-arn: arn:aws:iam::123456789123:role/xyz
 securityContext:

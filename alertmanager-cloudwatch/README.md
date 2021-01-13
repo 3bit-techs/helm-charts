@@ -1,6 +1,6 @@
 # alertmanager-cloudwatch
 
-![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
+![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
 
 Alert Manager Cloudwatch integration with Helm chart for Kubernetes
 
@@ -50,4 +50,5 @@ helm uninstall [RELEASE_NAME]
 | service.port | int | `80` |  |
 | service.type | string | `"ClusterIP"` |  |
 | serviceAccount.annotations."eks.amazonaws.com/role-arn" | string | `"arn:aws:iam::123456789123:role/xyz"` |  |
+| serviceAccount.create | bool | `true` |  |
 | snsArn | string | `"arn:aws:sns:us-east-1:123123:sns_test"` |  |
