@@ -1,6 +1,6 @@
 # kube-downscaler
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![AppVersion: 0.5.1](https://img.shields.io/badge/AppVersion-0.5.1-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![AppVersion: 0.5.1](https://img.shields.io/badge/AppVersion-0.5.1-informational?style=flat-square)
 
 A Helm chart for kube-downscaler
 
@@ -34,6 +34,7 @@ helm uninstall [RELEASE_NAME]
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| affinity | object | `{}` |  |
 | debug.enable | bool | `true` |  |
 | image.args | list | `[]` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
@@ -41,6 +42,7 @@ helm uninstall [RELEASE_NAME]
 | image.tag | string | `"19.10.1"` |  |
 | interval | int | `60` |  |
 | name | string | `"kube-downscaler"` |  |
+| nodeSelector | object | `{}` |  |
 | rbac.create | bool | `false` |  |
 | rbac.serviceAccountName | string | `"default"` |  |
 | replicaCount | int | `1` |  |
@@ -51,3 +53,4 @@ helm uninstall [RELEASE_NAME]
 | securityContext.readOnlyRootFilesystem | bool | `true` |  |
 | securityContext.runAsNonRoot | bool | `true` |  |
 | securityContext.runAsUser | int | `1000` |  |
+| tolerations | list | `[]` |  |
