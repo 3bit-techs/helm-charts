@@ -3,9 +3,9 @@ entries:
   alertmanager-cloudwatch:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-01-14T11:36:43.994259327-03:00"
+    created: "2021-01-14T12:10:33.902422197-03:00"
     description: Alert Manager Cloudwatch integration with Helm chart for Kubernetes
-    digest: ad173ab47a66fc316583264af8d9dd52d928e8be3439b85c1286f71c0beda8bf
+    digest: d9613687f754fed81f6bf10dadb6ecdcadb2c6a13449c4c1c7d54c536de502ca
     name: alertmanager-cloudwatch
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-01-14T11:36:43.99399461-03:00"
+    created: "2021-01-14T12:10:33.902135494-03:00"
     description: Alert Manager Cloudwatch integration with Helm chart for Kubernetes
     digest: 887e17eb83e3fec131fd0cef10cac4dadd6c96019fc6c23217f4006c171e2bd2
     name: alertmanager-cloudwatch
@@ -23,7 +23,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-01-14T11:36:43.993746374-03:00"
+    created: "2021-01-14T12:10:33.901874581-03:00"
     description: Alert Manager Cloudwatch integration with Helm chart for Kubernetes
     digest: 06ef8057dc359920643e92ede937ebdc1cfa2387b91622fb7dc57083d1d85ea3
     name: alertmanager-cloudwatch
@@ -33,7 +33,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-01-14T11:36:43.993496917-03:00"
+    created: "2021-01-14T12:10:33.901594469-03:00"
     description: Alert Manager Cloudwatch integration with Helm chart for Kubernetes
     digest: bc38b75c6810cc96fe0a6eec84a8eb695e43229f014f8ab1e07f8c99a5f611d8
     name: alertmanager-cloudwatch
@@ -44,9 +44,9 @@ entries:
   aws-alb-ingress-controller:
   - apiVersion: v1
     appVersion: v1.1.6
-    created: "2021-01-14T11:36:43.994724529-03:00"
+    created: "2021-01-14T12:10:33.902898266-03:00"
     description: A Helm chart for AWS ALB Ingress Controller
-    digest: 2c861c37127c8026aa3c74fe6e4a4a09b5aa76a03c7f2c21feff1e11405262db
+    digest: 0ba8e7575a0cde997965a733d0b3815f44396e4d46cf9b845be3025025f8dc34
     home: https://github.com/kubernetes-sigs/aws-alb-ingress-controller
     keywords:
     - aws
@@ -65,9 +65,9 @@ entries:
   cp-kafka-connect:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-01-14T11:36:43.9951539-03:00"
+    created: "2021-01-14T12:10:33.903336339-03:00"
     description: A Helm chart for Confluent Kafka Connect on Kubernetes
-    digest: e22ac845e115c9e8e7679e17ff17862680c2f3c1ee0cd13b7d45eaa5a34a7899
+    digest: e2e635efcb06483e0c621ada20fb91143215a8a397f540728f40ff540608c351
     name: cp-kafka-connect
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-kafka-connect-0.1.0.tgz
@@ -75,9 +75,9 @@ entries:
   cp-kafka-mirror-maker:
   - apiVersion: v1
     appVersion: 5.4.2
-    created: "2021-01-14T11:36:43.995546464-03:00"
+    created: "2021-01-14T12:10:33.903742624-03:00"
     description: A Helm chart for Confluent Kafka MirrorMaker on Kubernetes
-    digest: ef2c785c514187e2a3ea0e9a13c2b036bc7b766b2e40a9fdab36d0ed5ed1395c
+    digest: 97f086692d6b0a575d28f5c7ca92b7166b4a94cfd4a85e099c89ca4f6289e658
     icon: https://cwiki.apache.org/confluence/download/attachments/27821302/KAFKA?version=2&modificationDate=1391968911000&api=v2
     keywords:
     - kafka
@@ -93,9 +93,9 @@ entries:
   cp-schema-registry:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-01-14T11:36:43.996209531-03:00"
+    created: "2021-01-14T12:10:33.904334711-03:00"
     description: A Helm chart for Confluent Schema Registry on Kubernetes
-    digest: a498d0738b6ae00f12ad80e14a12bce06785ec8db12807f215817efa81373f8d
+    digest: 5fffa8fb5e0b9772ed56baa41e55d85dd2e021c8246a578e3efabf5070717988
     name: cp-schema-registry
     urls:
     - https://3bit-techs.github.io/helm-charts/cp-schema-registry-0.1.0.tgz
@@ -103,11 +103,11 @@ entries:
   jenkins:
   - apiVersion: v1
     appVersion: lts
-    created: "2021-01-14T11:36:43.998752202-03:00"
+    created: "2021-01-14T12:10:33.906839759-03:00"
     description: Open source continuous integration server. It supports multiple SCM
       tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
       Maven-based projects as well as arbitrary scripts.
-    digest: c2b26363caa8154ab69b754f129b3330fd4f99d86099ff52189a6f63a5ddab2d
+    digest: a2fba207821ea3e0791335b97e0d9de31a8281cab2fc2f08869fb9e56857685a
     home: https://jenkins.io/
     icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
     maintainers:
@@ -135,7 +135,21 @@ entries:
   kube-downscaler:
   - apiVersion: v1
     appVersion: 0.5.1
-    created: "2021-01-14T11:36:43.999595182-03:00"
+    created: "2021-01-14T12:10:33.908019065-03:00"
+    description: A Helm chart for kube-downscaler
+    digest: 609d371d2eaf9c0c4d2533e17842aa9c1c499ce2c342424adb08ed369c68040f
+    keywords:
+    - k8s pods scheduler
+    - scheduled lifecycle
+    name: kube-downscaler
+    sources:
+    - https://codeberg.org/hjacobs/kube-downscaler/
+    urls:
+    - https://3bit-techs.github.io/helm-charts/kube-downscaler-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v1
+    appVersion: 0.5.1
+    created: "2021-01-14T12:10:33.907727041-03:00"
     description: A Helm chart for kube-downscaler
     digest: 76b246e65ca06adbf594d89d69735dbed2fba154f3e88b32b65c857e33b5aa89
     keywords:
@@ -149,7 +163,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: 0.5.1
-    created: "2021-01-14T11:36:43.999318175-03:00"
+    created: "2021-01-14T12:10:33.907422606-03:00"
     description: A Helm chart for kube-downscaler
     digest: 4371a5bceda62813b8ebabc11efbcc961de76f14a81d5142e69857555815971f
     keywords:
@@ -163,7 +177,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 0.5.1
-    created: "2021-01-14T11:36:43.999035263-03:00"
+    created: "2021-01-14T12:10:33.907123794-03:00"
     description: A Helm chart for kube-downscaler
     digest: 174012f9d78c44ab921749b42228fc906d4507c4cdd155af4f171442d20aa3d4
     keywords:
@@ -178,9 +192,9 @@ entries:
   metrics-server:
   - apiVersion: v1
     appVersion: 0.3.6
-    created: "2021-01-14T11:36:44.000077801-03:00"
+    created: "2021-01-14T12:10:33.908519471-03:00"
     description: Metrics Server is a cluster-wide aggregator of resource usage data.
-    digest: f24286c7de1c6e584a574be9ae4c5d9a9dcf7a47698f3d95310ce5d74cc08909
+    digest: b0c4af1ef18d5827f682e0d52cc87581b07d157d5dfa96993746320793e83f8a
     home: https://github.com/kubernetes-incubator/metrics-server
     keywords:
     - metrics-server
@@ -193,9 +207,9 @@ entries:
   nexus-repository-manager:
   - apiVersion: v2
     appVersion: 3.28.1
-    created: "2021-01-14T11:36:44.000765302-03:00"
+    created: "2021-01-14T12:10:33.909212227-03:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
-    digest: e12681acb3c4b47ed3af97fef7199d36cc95f0009946be0f62ed62b876ecff8f
+    digest: 53b42522b867f8cd64d1dba1b0f5f3dbdb8aba27b362244b97c38336ac44f70f
     home: https://www.sonatype.com/nexus-repository-oss
     icon: https://sonatype.github.io/helm3-charts/NexusRepo_Vertical.svg
     keywords:
@@ -222,9 +236,9 @@ entries:
   vvpflow:
   - apiVersion: v1
     appVersion: 1.0.1
-    created: "2021-01-14T11:36:44.001351606-03:00"
+    created: "2021-01-14T12:10:33.909817711-03:00"
     description: A Helm chart for Ververica Platform Flow (GitOps Orchestrator)
-    digest: a4ef822fd815fe62e98acc3765b3fa7a260a3f86e3e8a53e7c8205dc0cca5597
+    digest: a6485c88c7af45169ed971c67f429dc26a6cc6dd18305611d90d290f706728c1
     icon: https://3bit-techs.github.io/helm-charts/vvp-logo.png
     keywords:
     - flink
@@ -241,7 +255,7 @@ entries:
     version: 1.0.1
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2021-01-14T11:36:44.001056953-03:00"
+    created: "2021-01-14T12:10:33.909516783-03:00"
     description: A Helm chart for Ververica Platform Flow (GitOps Orchestrator)
     digest: 1d688f45794709a7139d74e255e7f017a1cd94f12a291d897dc1418c8c701bf8
     icon: https://3bit-techs.github.io/helm-charts/vvp-logo.png
@@ -258,4 +272,4 @@ entries:
     urls:
     - https://3bit-techs.github.io/helm-charts/vvpflow-1.0.0.tgz
     version: 1.0.0
-generated: "2021-01-14T11:36:43.993136627-03:00"
+generated: "2021-01-14T12:10:33.901218897-03:00"

@@ -58,4 +58,15 @@ rules:
   verbs:
   - get
   - list
+- apiGroups:
+  - batch
+  resources:
+  - 'jobs'
+  - 'cronjobs'
+  verbs:
+  - get
+  - list
+  - watch
+  - update
+  - patch
 {{- end -}}
