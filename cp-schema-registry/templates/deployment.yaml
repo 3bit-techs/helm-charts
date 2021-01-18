@@ -33,6 +33,10 @@ spec:
       {{- end }}
       {{- end }}
     spec:
+      affinity:
+        {{- if .Values.affinity }}
+{{ toYaml .Values.tolerations | indent 8 }}
+        {{- end }}      
       containers:
         {{- if .Values.prometheus.jmx.enabled }}
         - name: prometheus-jmx-exporter

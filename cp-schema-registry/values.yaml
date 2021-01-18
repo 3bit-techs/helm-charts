@@ -66,6 +66,8 @@ nodeSelector: {}
 ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
 tolerations: []
 
+affinity: []
+
 ## Monitoring
 ## Schema Registry JMX Settings
 ## ref: https://docs.confluent.io/current/schema-registry/docs/monitoring.html

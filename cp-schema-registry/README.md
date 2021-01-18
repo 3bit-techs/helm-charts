@@ -34,6 +34,7 @@ helm uninstall [RELEASE_NAME]
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| affinity | list | `[]` |  |
 | configurationOverrides | object | `{}` |  |
 | customEnv | object | `{}` |  |
 | heapOptions | string | `"-Xms512M -Xmx512M"` |  |
