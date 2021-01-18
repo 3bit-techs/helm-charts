@@ -93,7 +93,16 @@ entries:
   cp-schema-registry:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-01-18T17:23:11.139149859-03:00"
+    created: "2021-01-18T17:47:02.439157389-03:00"
+    description: A Helm chart for Confluent Schema Registry on Kubernetes
+    digest: 2b2dfe1960174c61f1b4a0cd4f0dea356d35295023ecee61890d816f8a1e9af5
+    name: cp-schema-registry
+    urls:
+    - https://3bit-techs.github.io/helm-charts/cp-schema-registry-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-01-18T17:47:02.438362911-03:00"
     description: A Helm chart for Confluent Schema Registry on Kubernetes
     digest: 6d19edc6b9535baebf9e1bc10ec91bb8834a695cb1ab204b6936fedc82fd641c
     name: cp-schema-registry
