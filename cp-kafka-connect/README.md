@@ -1,6 +1,6 @@
 # cp-kafka-connect
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![AppVersion: 1.0](https://img.shields.io/badge/AppVersion-1.0-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![AppVersion: 1.0](https://img.shields.io/badge/AppVersion-1.0-informational?style=flat-square)
 
 A Helm chart for Confluent Kafka Connect on Kubernetes
 
@@ -34,6 +34,7 @@ helm uninstall [RELEASE_NAME]
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| affinity | list | `[]` |  |
 | configurationOverrides."config.storage.replication.factor" | string | `"3"` |  |
 | configurationOverrides."internal.key.converter" | string | `"org.apache.kafka.connect.json.JsonConverter"` |  |
 | configurationOverrides."internal.value.converter" | string | `"org.apache.kafka.connect.json.JsonConverter"` |  |
