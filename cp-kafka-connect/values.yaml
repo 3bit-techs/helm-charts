@@ -54,6 +54,9 @@ resources: {}
   #  cpu: 100m
   #  memory: 128Mi
 
+## Custom deployment annotations
+annotations: {}
+
 ## Custom pod annotations
 podAnnotations: {}
 

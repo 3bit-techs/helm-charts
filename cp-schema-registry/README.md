@@ -1,6 +1,6 @@
 # cp-schema-registry
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![AppVersion: 1.0](https://img.shields.io/badge/AppVersion-1.0-informational?style=flat-square)
+![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![AppVersion: 1.0](https://img.shields.io/badge/AppVersion-1.0-informational?style=flat-square)
 
 A Helm chart for Confluent Schema Registry on Kubernetes
 
@@ -35,6 +35,7 @@ helm uninstall [RELEASE_NAME]
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | affinity | list | `[]` |  |
+| annotations | object | `{}` |  |
 | configurationOverrides | object | `{}` |  |
 | customEnv | object | `{}` |  |
 | heapOptions | string | `"-Xms512M -Xmx512M"` |  |

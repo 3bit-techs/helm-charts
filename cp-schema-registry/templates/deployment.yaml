@@ -6,6 +6,12 @@ apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   name: {{ template "cp-schema-registry.fullname" . }}
+  {{- if or .Values.annotations }}
+  annotations:
+  {{- range $key, $value := .Values.annotations }}
+    {{ $key }}: {{ $value | quote }}
+  {{- end }}
+  {{- end }}
   labels:
     app: {{ template "cp-schema-registry.name" . }}
     chart: {{ template "cp-schema-registry.chart" . }}
